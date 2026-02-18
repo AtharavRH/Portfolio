@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 import PageContainer from "@/components/common/page-container";
-import GithubRedirectCard from "@/components/contact/github-redirect-card";
+import SocialLinksCard from "@/components/contact/social-links-card";
 import { ContactForm } from "@/components/forms/contact-form";
 import { pagesConfig } from "@/config/pages";
 
@@ -16,12 +16,12 @@ export default function ContactPage() {
       title={pagesConfig.contact.title}
       description={pagesConfig.contact.description}
     >
-      <div className="flex flex-col lg:flex-row">
-        <div className="flex-1">
+      <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex-1 max-w-xl">
           <ContactForm />
         </div>
-        <div className="flex-1 flex justify-end">
-          <GithubRedirectCard />
+        <div className="flex-1 flex justify-center lg:justify-end">
+          <SocialLinksCard />
         </div>
       </div>
     </PageContainer>

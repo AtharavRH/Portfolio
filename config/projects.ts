@@ -39,13 +39,13 @@ export const Projects: ProjectInterface[] = [
     techStack: ["Python", "PHP", "Linux", "Git", "Docker", "Security Research"],
     startDate: new Date("2023-01-01"),
     endDate: new Date("2023-05-01"),
-    companyLogoImg: "/logo.png",
+    companyLogoImg: "/projects/wordpress-kratos-analysis/banner.jpg",
     pagesInfoArr: [
       {
         title: "Research & Framework",
         description:
-          "Study of three distribution channels: web-based marketplaces, Telegram, and Torrents. Kratos combines regex and AST-based behavioral signatures.",
-        imgArr: ["/logo.png"],
+          "The study analyzed three distribution channels: (1) web-based nulled marketplaces (vestathemes, wptry, wplocker), (2) Telegram channels, and (3) Torrent sites. Kratos is a three-phase pipeline: (a) extraction of PHP files using magic-based MIME identification (not file extensions), (b) malware detection via seven signature families—API/WordPress abuse, blackhat SEO, downloaders, function construction, input-gated backdoors, MPlugin (ad-injection), and spam injection—combining regex patterns with PHP AST-derived semantic analysis, and (c) JSON report generation. The framework runs in Docker for reproducible, isolated analysis.",
+        imgArr: [],
       },
     ],
     descriptionDetails: {
