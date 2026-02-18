@@ -13,7 +13,7 @@ import ProjectCard from "@/components/projects/project-card";
 import SkillsCard from "@/components/skills/skills-card";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { featuredContributions } from "@/config/contributions";
-import { experiences } from "@/config/experience";
+import { experiences, featuredExperienceIds } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
 import { featuredProjects } from "@/config/projects";
 import { siteConfig } from "@/config/site";
@@ -176,7 +176,11 @@ export default function IndexPage() {
           </AnimatedText>
         </div>
         <div className="mx-auto grid justify-center gap-4 md:w-full lg:grid-cols-3">
-          {experiences.slice(0, 3).map((experience, index) => (
+          {experiences
+            .filter((exp) =>
+              (featuredExperienceIds as readonly string[]).includes(exp.id)
+            )
+            .map((experience, index) => (
             <AnimatedSection
               key={experience.id}
               delay={0.1 * (index + 1)}
@@ -189,7 +193,7 @@ export default function IndexPage() {
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/experience">
             <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All Experience
             </Button>
           </Link>
         </AnimatedText>

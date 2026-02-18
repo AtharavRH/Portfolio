@@ -23,16 +23,14 @@ export const experiences: ExperienceInterface[] = [
     startDate: new Date("2024-10-01"),
     endDate: "Present",
     description: [
-      "Track eCrime and nation-state threat actors and ORB infrastructure targeting Meta; translate TTPs into detections and response guidance.",
-      "Support live nation-state IR events (scoping to legal remediation), delivering real-time intel, threat analysis, and on-call investigation support.",
-      "Partner with Red Team and Endpoint Protection Team to run adversary emulation and strengthen monitoring coverage.",
-      "Lead TTP-driven threat hunts mapped to MITRE ATT&CK; translate adversary behaviors into durable detection opportunities and actionable playbooks.",
-      "Design, implement, and maintain an RMM abuse control system for tracking, detection, and prevention.",
+      "Tracked eCrime and nation-state threat actors and ORB infrastructure targeting Meta; translated TTPs into detections and response guidance.",
+      "Supported live nation-state IR events (from scoping to legal remediation), delivering real-time intel, threat analysis, and on-call investigation support.",
+      "Partnered with internal teams (especially Red Team and Endpoint Protection Team) to run adversary emulation and strengthen monitoring coverage; identified telemetry gaps and drove detection improvements.",
+      "Led TTP-driven threat hunts mapped to MITRE ATT&CK; translated adversary behaviors into durable detection opportunities and actionable playbooks/runbooks.",
+      "Designed, implemented, and maintained an RMM abuse control system (tracking, detection, and prevention), improving visibility into RMM activity and strengthening protections against tooling misuse.",
+      "Drove rapid tuning for emerging threats and infection trends to keep detections current.",
     ],
-    achievements: [
-      "Identified telemetry gaps and drove detection improvements.",
-      "Drove rapid tuning for emerging threats and infection trends.",
-    ],
+    achievements: [],
     skills: ["Python", "Linux", "Git", "Security Research", "Vulnerability Assessment"],
     companyUrl: "https://about.meta.com",
     logo: undefined,
@@ -45,13 +43,10 @@ export const experiences: ExperienceInterface[] = [
     startDate: new Date("2024-05-01"),
     endDate: new Date("2024-10-01"),
     description: [
-      "Simulated 20+ critical CVEs to derive network and application indicators; shipped detection logic and validation test cases.",
-      "Produced engineering-ready write-ups to support faster triage and response.",
+      "Simulated 20+ critical CVEs to derive network and application indicators, then shipped detection logic and validation test cases. Produced clear, engineering-ready write-ups to support faster triage and response.",
       "Mapped AD and remote tooling abuse to MITRE ATT&CK and created repeatable detection content and briefings.",
     ],
-    achievements: [
-      "Delivered detection content for emerging CVE threats.",
-    ],
+    achievements: [],
     skills: ["Python", "Linux", "Git", "Security Research", "Vulnerability Assessment"],
     companyUrl: "https://www.extrahop.com",
     logo: undefined,
@@ -82,9 +77,9 @@ export const experiences: ExperienceInterface[] = [
     startDate: new Date("2023-06-01"),
     endDate: new Date("2023-07-01"),
     description: [
-      "Developed Python connector drivers for a PAM platform using gRPC/REST/SOAP, integrating with Cisco FTD/IOS, ServiceNow, and MongoDB Atlas.",
-      "Contributed to OWASP-aligned cloud hardening guardrails in AWS.",
+      "Developed Python connector drivers for a PAM platform using gRPC/REST/SOAP, integrating with Cisco FTD/IOS, ServiceNow, and MongoDB Atlas. Contributed to OWASP-aligned cloud hardening guardrails in AWS.",
       "Customized Power BI dashboards and API/SQL queries to meet client reporting requirements.",
+      "Contributed to developing and on-boarding in-house tools on ESXi.",
     ],
     achievements: [
       "Completed ServiceNow task in ~4 days (expected 7 weeks) – recognized by managers.",
@@ -102,8 +97,9 @@ export const experiences: ExperienceInterface[] = [
     endDate: new Date("2022-03-01"),
     description: [
       "Identified Log4Shell (Log4j) exposure, validated impact, and escalated remediation guidance.",
-      "Built a GCP security testing environment with centralized log/metrics monitoring (Elastic/Kibana).",
-      "Executed Nessus compliance scans to surface and report control gaps.",
+      "Built a GCP security testing environment with centralized log/metrics monitoring (Elastic/Kibana) and executed Nessus compliance scans to surface and report control gaps.",
+      "Conducted Vulnerability Assessment and Penetration Testing using Burp Suite and Nessus; assisted in validating results.",
+      "Member of the organization's cybersecurity club (Sneak It).",
     ],
     achievements: [
       "Internship Excellence Award (top 1 of 37).",
@@ -122,6 +118,7 @@ export const experiences: ExperienceInterface[] = [
     description: [
       "Triaged security findings and documented Proof-of-Concepts and hardening guidance for clients.",
       "Contributed to designing security questionnaires and pen-testing checklists for Web-App, API, and Cloud.",
+      "Contributed to research and threat intelligence.",
     ],
     achievements: [],
     skills: ["Burp Suite", "OWASP", "Vulnerability Assessment", "Security Research"],
@@ -136,8 +133,8 @@ export const experiences: ExperienceInterface[] = [
     startDate: new Date("2020-11-01"),
     endDate: new Date("2021-04-01"),
     description: [
-      "Scoped engagements with clients; performed vulnerability assessment and penetration tests.",
-      "Executed Web application, API, and Cloud penetration testing.",
+      "Gathered clear and coherent data from clients to scope engagements.",
+      "Performed vulnerability assessment and penetration tests, including Web application penetration testing, API penetration testing, and Cloud penetration testing.",
     ],
     achievements: [],
     skills: ["Burp Suite", "OWASP", "Vulnerability Assessment", "Linux"],
@@ -145,3 +142,6 @@ export const experiences: ExperienceInterface[] = [
     logo: undefined,
   },
 ];
+
+// Experiences to showcase on the homepage (Meta, ExtraHop, Ernst & Young)
+export const featuredExperienceIds = ["meta", "extrahop", "ey"] as const;
