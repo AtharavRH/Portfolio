@@ -71,13 +71,13 @@ export const Projects: ProjectInterface[] = [
     techStack: ["Python", "Flask", "Linux", "Git", "Security Research"],
     startDate: new Date("2020-08-01"),
     endDate: new Date("2021-03-01"),
-    companyLogoImg: "/logo.png",
+    companyLogoImg: "/projects/secure-cloud-storage/banner.jpg",
     pagesInfoArr: [
       {
         title: "Architecture",
         description:
           "Distributed systems security with certificates, mutual authentication, and encrypted channels for multi-user document storage.",
-        imgArr: ["/logo.png"],
+        imgArr: [],
       },
     ],
     descriptionDetails: {
