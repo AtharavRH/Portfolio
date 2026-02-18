@@ -71,4 +71,13 @@ export const pagesConfig: PagesConfig = {
         "Atharav Hedage's professional experience and timeline.",
     },
   },
+  blog: {
+    title: "Blog",
+    description: "Security insights, technical articles, and research findings.",
+    metadata: {
+      title: "Blog",
+      description:
+        "Atharav Hedage's security and technical blog articles.",
+    },
+  },
 };
